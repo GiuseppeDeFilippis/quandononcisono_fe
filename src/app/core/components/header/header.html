@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg qncs-navbar">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand qncs-logo" routerLink="/">
+      quandononcisono
+    </a>
+
+    <!-- Mobile toggler -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarMenu"
+      aria-controls="navbarMenu"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item"><a class="nav-link" routerLink="/about">About</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/racconti">Racconti</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/podcast">Podcast</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/newsletter">Newsletter</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/contatti">Contatti</a></li>
+
+        <!-- Solo se loggato -->
+        @if (auth?.isLoggedIn()) {
+          <li class="nav-item">
+            <a class="nav-link admin-link" routerLink="/admin">Admin</a>
+          </li>
+        }
+      </ul>
+    </div>
+
+  </div>
+</nav>

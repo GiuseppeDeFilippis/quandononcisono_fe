@@ -1,0 +1,49 @@
+@import '../../../../styles/variables';
+
+.qncs-navbar {
+  background-color: $color-bg;
+  border-bottom: 1px solid $color-muted;
+  padding: 16px 0;
+}
+
+.qncs-logo {
+  font-family: $font-heading;
+  font-size: 28px;
+  color: $color-primary;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.nav-link {
+  font-family: $font-body;
+  font-size: 16px;
+  color: $color-text !important;
+  padding: 8px 16px;
+  transition: 0.2s ease;
+
+  &:hover {
+    color: $color-primary !important;
+  }
+}
+
+.admin-link {
+  font-weight: bold;
+  color: $color-primary !important;
+}
+
+.navbar-toggler {
+  border: none;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(52,84,87,0.8)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+

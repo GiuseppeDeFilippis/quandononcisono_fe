@@ -1,0 +1,34 @@
+// ============================================
+// VARIABLES – quandononcisono
+// Palette, fonts, spacing, shadows
+// ============================================
+
+// --- Colors ---
+$color-primary: #345457;   // blu-verde profondo
+$color-bg: #F6F5F2;        // panna
+$color-muted: #D6D8D7;     // grigio chiaro
+$color-text: #2E2E2E;      // antracite
+$color-accent: #AEBFB7;    // verde salvia
+
+// --- Typography ---
+$font-heading: 'Cormorant Garamond', serif;
+$font-body: 'Inter', sans-serif;
+
+// --- Spacing scale ---
+$space-xxs: 4px;
+$space-xs: 8px;
+$space-sm: 12px;
+$space-md: 20px;
+$space-lg: 32px;
+$space-xl: 48px;
+$space-xxl: 64px;
+
+// --- Border radius ---
+$radius-sm: 4px;
+$radius-md: 8px;
+$radius-lg: 16px;
+$radius-xl: 24px;
+
+// --- Shadows ---
+$shadow-soft: 0 4px 20px rgba(0,0,0,0.06);
+$shadow-medium: 0 2px 8px rgba(0,0,0,0.10);

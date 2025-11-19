@@ -1,0 +1,59 @@
+// ============================================
+// LAYOUT – quandononcisono
+// Global layout helpers, containers, spacing
+// ============================================
+
+// Container layout
+.container {
+  width: min(1100px, 90%);
+  margin-inline: auto;
+  padding-block: $space-xl;
+}
+
+// Utility classes
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+.mt-sm { margin-top: $space-sm; }
+.mt-md { margin-top: $space-md; }
+.mt-lg { margin-top: $space-lg; }
+
+.mb-sm { margin-bottom: $space-sm; }
+.mb-md { margin-bottom: $space-md; }
+.mb-lg { margin-bottom: $space-lg; }
+
+.pt-md { padding-top: $space-md; }
+.pb-md { padding-bottom: $space-md; }
+
+// Card style
+.card {
+  background: white;
+  border-radius: $radius-lg;
+  padding: $space-lg;
+  box-shadow: $shadow-soft;
+}
+
+// Buttons
+.button {
+  background: $color-primary;
+  color: white;
+  padding: $space-sm $space-md;
+  border-radius: $radius-md;
+  font-size: 16px;
+  font-family: $font-body;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s ease;
+
+  &:hover {
+    background: darken($color-primary, 5%);
+  }
+}
+
+// Divider
+.divider {
+  height: 1px;
+  width: 100%;
+  background: $color-muted;
+  margin: $space-lg 0;
+}
